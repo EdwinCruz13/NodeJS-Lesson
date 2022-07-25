@@ -5,6 +5,6 @@
   <br>
     <p dir="auto">
         you can download the latest version of node.js from the downloads page of node's official website: <a href="https://nodejs.org">🔗 HERE!!!</a>
-        <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/img/0-nodejs-pages.png?raw=true" alt="Installing nodejs - EdwinCruz" />
+        <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/img/0-nodejs-pages.png?raw=true" alt="Installing nodejs - EdwinCruz" width = "80" height = "80" />
     </p>
 </details>
