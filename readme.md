@@ -45,7 +45,7 @@ Node.js was built on top of Google's V8 JavaScript engine since it was open-sour
 <details open="">
   <summary><h2>✨Give some feedbacks</h2></summary>
 <p dir="auto">
-  This repository is one of some season of courses I am doing, feel as your home reading it, we will learn together, it is ok if you have any question, and give some feedback.
+  This repository is one of some season of courses I am doing, feel as your home reading it, we will learn together, it is ok if you have any question, and do not forget giving me some feedback.
   </br>
   <ul>
     <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
