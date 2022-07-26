@@ -89,3 +89,9 @@ server.listen(port, host, (error) => {
     console.log(`Server is listening on ${host}:${port}`);
 });
 ```
+- [x] Execute the app using the terminal.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/img/5-http%20server.png?raw=true" width ="100%"/>
+
+- [x] Then, check it using the browser (chrome, firefox, opera, or 😂 IE 😂).
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/img/5-http%20client.png?raw=true" width ="100%"/>
+
