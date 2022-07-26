@@ -10,7 +10,7 @@
 </details>
 
 <details open="">
-  <summary><h2>✨Your First App</h2></summary>
+  <summary><h2>💪Your First App</h2></summary>
   <p dir="auto">
     
 - [x] It is time to create a new file, you can name it as "1-Hello World.js".
