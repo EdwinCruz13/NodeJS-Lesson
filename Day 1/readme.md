@@ -14,11 +14,11 @@
   <p dir="auto">
     
 - [x] It is time to create a new file, you can name it as "1-Hello World.js".
-- [x] Add this code in your "1-Hello World.js" file:
+- [x] Add the next code in your "1-Hello World.js" file:
 ```
 console.log("Hello world")
 ```
-- [x] Then use the terminal prompt and execute the file using the following code:
+- [x] Then open your terminal and execute the file using the following code:
 ```
 node "1-Hello World.js"
 ```
