@@ -27,7 +27,7 @@ Node.js was built on top of Google's V8 JavaScript engine since it was open-sour
   </br>
   <ul>
     <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%201">Day 1 - Your First Hello World.</a></li>
-    <li><a href="#">Day 2 - Your First Server with HTTP Module.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%202">Day 2 - Your First Server with HTTP Module.</a></li>
     <li><a href="#">Day 3 - </a></li>
     <li><a href="#">Day 4 - </a></li>
     <li><a href="#">Day 5 - </a></li>
