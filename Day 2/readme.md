@@ -42,8 +42,8 @@ var port = 3000; // default port
 - request : which contains all the information related to client's request such as URL, custom headers , client info , etc.
 - response : which is used to return the data back to the client.
 - [x] Inside the arrow function, write the next method throuht response arguments.
-- response.writeHead: it is an inbuilt method which is used to send the status code and the MIME type. (Content-Type)
-- response.end(): it is an inbuilt function which is used to tell the server that the request has been fulfilled.Along with that we can also send one response using this.
+- response.writeHead: it is an inbuilt method which is used to send the status code and the <a href="https://en.wikipedia.org/wiki/Media_type"> MIME type </a>.
+- response.end(): it is an inbuilt function which is used to tell the server that the request has been fulfilled. Along with that we can also send one response using this.
 ```
 var server = http.createServer((request, response) => {
     //Sends a response header to the request. 
