@@ -3,12 +3,11 @@
 <details open="">
   <summary><h2>✨Installing</h2></summary>
     <p dir="auto">
-        <a href="#"><h4>NodeJS</h4></a>
+        <a href="https://nodejs.org"><h4>NodeJS</h4></a>
         You can download the latest version of node.js from the downloads page of node's official website: <a href="https://nodejs.org">🔗 HERE!!!</a>
         <br>
         Follow the intructions according your operative system in Windows, MacOS, Linux.
-        <br>
-        <a href="#"><h4>Visual Studio Code</h4></a>
+        <a href="https://code.visualstudio.com/"><h4>Visual Studio Code</h4></a>
         You can use any text editor as Notepad++, Atom, or VIM, I'd rather use Visual Studio Code, its official webpage you can find it <a href="https://code.visualstudio.com/">🔗 HERE!!!</a>
         <br>
         Follow the intructions according your operative system in Windows, MacOS, Linux.
