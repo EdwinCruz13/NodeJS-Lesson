@@ -62,7 +62,7 @@ server.listen(port, host, (error) => {
 });
 ```
   
-  ###### This example you can find it in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%202/2-Server.js">👓 Here</a>
+  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%202/2-Server.js">👓 Here</a>
 </details>
 
 ```
