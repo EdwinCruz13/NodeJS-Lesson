@@ -1,4 +1,4 @@
-# NodeJS-Lesson - Introduction
+# NodeJS-Lesson - Your first Hello World
 
 <details open="">
   <summary><h2>✨Installing</h2></summary>
