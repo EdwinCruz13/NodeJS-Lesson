@@ -23,7 +23,7 @@
 </details>
 
 <details close="">
-  <summary><h2>💪 Example with Read a File</h2></summary>
+  <summary><h2>👓 Example Reading a File</h2></summary>
   <p dir="auto">
     
 - [x] Create a new file, you can name it as "readme.js".
@@ -65,7 +65,7 @@ console.log('Content : ' + content);
 
 
 <details close="">
-  <summary><h2>💪 Example Write a File</h2></summary>
+  <summary><h2>📝 Example Wrting a File</h2></summary>
   <p dir="auto">
     
 - [x] Create a new file, you can name it as "writeme.js".
@@ -112,7 +112,7 @@ console.log("File Written Successfully");
 
 
 <details close="">
-  <summary><h2>💪 Example Appending to a File</h2></summary>
+  <summary><h2>✍️ Example Appending to a File</h2></summary>
   <p dir="auto">
     
 - [x] Create a new file, you can name it as "appendme.js".
@@ -159,7 +159,7 @@ console.log("File Appended Successfully");
 
 
 <details close="">
-  <summary><h2>💪 Example Rename a File</h2></summary>
+  <summary><h2>📝 Example Renaming a File</h2></summary>
   <p dir="auto">
     
 - [x] Create a new file, you can name it as "renameme.js".
@@ -200,7 +200,7 @@ console.log('File renamed successfully');
 
 
 <details close="">
-  <summary><h2>💪 Example Delete a File</h2></summary>
+  <summary><h2>❌ Example Deleting a File</h2></summary>
   <p dir="auto">
     
 - [x] Create a new file, you can name it as "deleteme.js".
@@ -240,7 +240,8 @@ console.log('File Deleted Successfully');
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/deleteme.png?raw=true" width ="100%"/>
 
 - [x] Now, check out the file located in the resource path, you will see the file has been eliminated from the path.
-🤣 🤣 There is not a file!!!!!
+<br>
+🤣 🤣 There is not a file, dah!!!!!
 </details>
 
 
