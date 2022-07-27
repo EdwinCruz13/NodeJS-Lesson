@@ -77,7 +77,7 @@ package name: (day-4) day4_package
       "express": "^4.18.1"
   }
   ```
-  - [x] Express package has been installed has a dependecies that will be used in the path.
+  - [x] Express package has been installed has a dependecies that will be used in the path, the express version is "4.18.1".
   - [x] Create a new file, this time I am going to name it "index.js".
   - [x] In "index.js" file add the next code and execute using the terminal.
 ```
@@ -92,7 +92,7 @@ node index.js
 
 
 <details open="">
-  <summary><h2>❌NPM</h2></summary>
+  <summary><h2>❌Removing a Package</h2></summary>
     <p dir="auto">
 
   - [x] Now, we have to uninstall the express package, in yout terminal add the next instruction:
@@ -116,5 +116,26 @@ npm uninstall express
   "license": "ISC"
 }
 ```
+  </p>
+</details>
+
+
+<details open="">
+  <summary><h2>✨Installing an Old Version</h2></summary>
+    <p dir="auto">
+
+  - [x] You probably think that it is a little unsafer install or update the recent version of a package, NPM provides us a good way to install a previous 
+        version, you can do it with the next code in your console:
+
+        ```
+        npm install express@4.15.1
+        ```
+
+  - [x] Then, the package.json file will be modified, adding the new express dependency, this time using a version "4.15.1".
+  ```
+  "dependencies": {
+    "express": "^4.15.1"
+  }
+  ```
   </p>
 </details>
