@@ -91,7 +91,7 @@ node index.js
 </details>
 
 
-<details open="">
+<details close="">
   <summary><h2>❌Removing a Package</h2></summary>
     <p dir="auto">
 
@@ -120,7 +120,7 @@ npm uninstall express
 </details>
 
 
-<details open="">
+<details close="">
   <summary><h2>✨Installing an Old Version</h2></summary>
     <p dir="auto">
 
@@ -140,3 +140,26 @@ npm uninstall express
    ```
   </p>
 </details>
+
+
+<details close="">
+  <summary><h2>✨Updating an Old Version</h2></summary>
+    <p dir="auto">
+
+  - [x] You probably think that it is a little unsafer keep an old version of a package, NPM provides us a good way to update the package to a recently 
+        version, you can do it with the next code in your console:
+
+   ```
+    npm update express
+   ```
+
+  - [x] Then, the package.json file will be modified, modifying the new express dependency, this time using a version "4.18.1".
+  
+   ```
+    "dependencies": {
+      "express": "^4.18.1"
+     }
+   ```
+  </p>
+</details>
+
