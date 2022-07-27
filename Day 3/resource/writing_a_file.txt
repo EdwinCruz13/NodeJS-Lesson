@@ -1,1 +1,2 @@
-this is the content that I want to write
+this is the content that I want to write.
+This data will be appended at the end of the file writeme.js
