@@ -147,11 +147,54 @@ console.log("File Appended Successfully");
   
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/appendme.js">👓 Here</a>
   
-  - [x] Execute the app using the terminal 'node writeme.js', you will see the execution Asynchronously or Synchronously.
+  - [x] Execute the app using the terminal 'node appendme.js', you will see the execution Asynchronously or Synchronously.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/appendme.png?raw=true" width ="100%"/>
 
 - [x] Now, check out the file located in the resource path, you will see the file has been modified at the end of the line.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/appendme2.png?raw=true" width ="100%"/>
+</details>
+
+
+
+
+
+<details close="">
+  <summary><h2>💪 Example Rename a File</h2></summary>
+  <p dir="auto">
+    
+- [x] Create a new file, you can name it as "renameme.js".
+- [x] Now, we have to import the module 'fs', then add the next code:
+```
+var fs = require('fs');
+```
+- [x] There is two type of execution in NodeJS: Asynchronous and Synchronous
+```
+Asynchronous = means that NodeJS avoid blocking code, then the execution will be doing in background mode until it is accomplished.
+Synchronous = means that NodeJS await the task will be accomplished, then the execution will resume.
+```
+- [x] Add the next section of code in order to write a file asynchronously (pd: if the file does not exists there will be a fatal error):
+```
+//you have to pass the Relative path of the file from the Current working directory.
+fs.rename('resource/writing_a_file.txt', 'resource/new_file.txt', (err) => {
+	if (err)
+		throw err;
+	console.log('File renamed successfully');
+});
+```
+- [x] Add the next section of code in order to rename a file synchronously:
+```
+//you have to pass the Relative path of the file from the Current working directory.
+fs.renameSync('resource/new_file.txt', 'resource/writing_a_file.txt');
+console.log('File renamed successfully');
+```
+  
+  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/renameme.js">👓 Here</a>
+  
+  - [x] Execute the app using the terminal 'node renameme.js', you will see the execution Asynchronously or Synchronously.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/renameme.png?raw=true" width ="100%"/>
+
+- [x] Now, check out the file located in the resource path, you will see the file has been renamed by new_file.txt.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/renameme2.png?raw=true" width ="100%"/>
 </details>
 
 
