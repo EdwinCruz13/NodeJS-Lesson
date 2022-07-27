@@ -125,7 +125,7 @@ var fs = require('fs');
 Asynchronous = means that NodeJS avoid blocking code, then the execution will be doing in background mode until it is accomplished.
 Synchronous = means that NodeJS await the task will be accomplished, then the execution will resume.
 ```
-- [x] Add the next section of code in order to write a file asynchronously (automatically, the file will be create in the path we define):
+- [x] Add the next section of code in order to write a file asynchronously (automatically, the file will be create in the path we define and append a new text at the end of the file):
 ```
 //use \n to jump to the next line
 var appending = "\nThis data will be appended at the end of the file writeme.js";
@@ -195,6 +195,52 @@ console.log('File renamed successfully');
 
 - [x] Now, check out the file located in the resource path, you will see the file has been renamed by new_file.txt.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/renameme2.png?raw=true" width ="100%"/>
+</details>
+
+
+
+<details close="">
+  <summary><h2>💪 Example Delete a File</h2></summary>
+  <p dir="auto">
+    
+- [x] Create a new file, you can name it as "deleteme.js".
+- [x] Now, we have to import the module 'fs', then add the next code:
+```
+var fs = require('fs');
+```
+- [x] There is two type of execution in NodeJS: Asynchronous and Synchronous
+```
+Asynchronous = means that NodeJS avoid blocking code, then the execution will be doing in background mode until it is accomplished.
+Synchronous = means that NodeJS await the task will be accomplished, then the execution will resume.
+```
+- [x] Add the next section of code in order to write a file asynchronously (pd: if the file does not exists there will be a fatal error, so create the 'writing_a_file.txt' file in 'resource' folder):
+```
+//the file to delete
+var filename = 'resource/writing_a_file.txt';
+
+//asychronously
+fs.unlink(filename, (err) => {
+	if (err) 
+		throw err;
+	console.log('File deleted successfully');
+});
+```
+- [x] Add the next section of code in order to delete a file synchronously:
+```
+//the file to delete
+var filename = 'resource/writing_a_file.txt';
+//sychronously
+fs.unlinkSync(filename);
+console.log('File Deleted Successfully');
+```
+  
+  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/deleteme.js">👓 Here</a>
+  
+  - [x] Execute the app using the terminal 'node deleteme.js', you will see the execution Asynchronously or Synchronously.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/deleteme.png?raw=true" width ="100%"/>
+
+- [x] Now, check out the file located in the resource path, you will see the file has been eliminated from the path.
+🤣 🤣 There is not a file!!!!!
 </details>
 
 
