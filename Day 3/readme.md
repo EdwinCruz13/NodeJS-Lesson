@@ -108,3 +108,51 @@ console.log("File Written Successfully");
 </details>
 
 
+
+
+
+<details close="">
+  <summary><h2>💪 Example Appending into a File</h2></summary>
+  <p dir="auto">
+    
+- [x] Create a new file, you can name it as "appendme.js".
+- [x] Now, we have to import the module 'fs', then add the next code:
+```
+var fs = require('fs');
+```
+- [x] There is two type of execution in NodeJS: Asynchronous and Synchronous
+```
+Asynchronous = means that NodeJS avoid blocking code, then the execution will be doing in background mode until it is accomplished.
+Synchronous = means that NodeJS await the task will be accomplished, then the execution will resume.
+```
+- [x] Add the next section of code in order to write a file asynchronously (automatically, the file will be create in the path we define):
+```
+//use \n to jump to the next line
+var appending = "\nThis data will be appended at the end of the file writeme.js";
+
+fs.appendFile('resource/writing_a_file.txt', appending , (err) => {
+	if(err) 
+		throw err;
+	console.log('Saved it');
+});
+```
+- [x] Add the next section of code in order to read a file synchronously:
+```
+//file append operation in nodejs
+var fs = require('fs');
+var content = "\nThis data will be appended at the end of the file writing_a_file.txt";
+fs.appendFileSync('resource/writing_a_file.txt', content);
+console.log("File Appended Successfully");
+```
+  
+  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/appendme.js">👓 Here</a>
+  
+  - [x] Execute the app using the terminal 'node writeme.js', you will see the execution Asynchronously or Synchronously.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/appendme.png?raw=true" width ="100%"/>
+
+- [x] Now, check out the file located in the resource path, you will see the file has been modified at the end of the line.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/appendme2.png?raw=true" width ="100%"/>
+</details>
+
+
+
