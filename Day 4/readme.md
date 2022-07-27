@@ -46,3 +46,45 @@ package name: (day-4) day4_package
 }
 ```
 </details>
+
+
+<details open="">
+  <summary><h2>📒 Installing a package</h2></summary>
+    <p dir="auto">
+        There are two ways to install a package.
+        <br>
+              * Locally: We install packages locally when we need to require them in our application for example 'express'.
+        <br>
+              * Globally: We install packages globally when we want to use it, this will do it in background.
+        <br>
+    </p>
+
+  <p dir="auto">
+      <br>
+      * The next example we are going to install 'express' package locally.
+      <br>
+
+  - [x] Open the console and add the next sentence.
+  ```
+  npm install express
+  ```
+  </p>
+  - [x] After the installation, you will see a new folder named "node_modules" that contain all library that will be used by express package.
+  - [x] Now, check out the package.json file in the path, you will see some changes as:
+   ```
+  "dependencies": {
+      "express": "^4.18.1"
+  }
+  ```
+  - [x] Express package has been installed has a dependecies that will be used in the path.
+  - [x] Create a new file, this time I am going to name it "index.js".
+  - [x] In "index.js" file add the next code and execute using the terminal.
+```
+const express = require('express');
+```
+  - [x] Execute using the terminal.
+```
+node index.js
+```
+- [x] You will see after the execution, the run did not trigger any error.
+</details>
