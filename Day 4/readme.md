@@ -7,7 +7,7 @@
     </p>
 </details>
 
-<details open="">
+<details close="">
   <summary><h2>📦 Creating a Package Manager</h2></summary>
     <p dir="auto">
         package.json is a way to manage the locally installed packages and serves as documentation on which our project depends including a directory which keeps track of all the dependencies our project is using.
@@ -69,6 +69,7 @@ package name: (day-4) day4_package
   npm install express
   ```
   </p>
+  
   - [x] After the installation, you will see a new folder named "node_modules" that contain all library that will be used by express package.
   - [x] Now, check out the package.json file in the path, you will see some changes as:
    ```
