@@ -10,9 +10,9 @@ fs.readFile('resource/read.txt', (err, data) => {
 	console.log("Content 1 :  " + data);
 });
 
-
 //method tha works Synchronously 
 var filename = 'resource/read.txt'; //Name of the file to be read
 var content = fs.readFileSync(filename);
 console.log('Content : ' + content);
+
 

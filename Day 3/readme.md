@@ -56,33 +56,9 @@ console.log('Content : ' + content);
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%202/2-Server.js">👓 Here</a>
 </details>
 
-```
-//Node provide us with a inbuilt http module which we can use to create the server
-var http = require('http');
+- [x] Execute the app using the terminal 'node readme.js', you will see the execution Asynchronously.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/readAsychronously.png?raw=true" width ="100%"/>
 
-//Define a host and port
-var host = '127.0.0.1'; //localhost
-var port = 3000; // default port
-
-//create an object type http
-var server = http.createServer((request, response) => {
-    //Sends a response header to the request. 
-    //The status code is a 3-digit HTTP status code, like 404. The last argument, headers, are the response headers
-    response.writeHead(200, { "Content-Type" : "text/plain"})
-    response.end('Server Working Success');
-});
-
-//execute the server using the 'listen method'
-server.listen(port, host, (error) => {
-    if(error)   
-        return console.error(`Error has occured: ${error}`);
-
-    console.log(`Server is listening on ${host}:${port}`);
-});
-```
-- [x] Execute the app using the terminal.
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/img/5-http%20server.png?raw=true" width ="100%"/>
-
-- [x] Then, check it using the browser (chrome, firefox, opera, or 😂 IE 😂).
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/img/5-http%20client.png?raw=true" width ="100%"/>
+- [x] Execute the app using the terminal 'node readme.js', you will see the execution Synchronously.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/readSychronously.png?raw=true" width ="100%"/>
 
