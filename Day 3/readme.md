@@ -53,7 +53,7 @@ var content = fs.readFileSync(filename);
 console.log('Content : ' + content);
 ```
   
-  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/readme.md">👓 Here</a>
+  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/readme.js">👓 Here</a>
   
   - [x] Execute the app using the terminal 'node readme.js', you will see the execution Asynchronously.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/readAsychronously.png?raw=true" width ="100%"/>
