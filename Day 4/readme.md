@@ -127,16 +127,16 @@ npm uninstall express
   - [x] You probably think that it is a little unsafer install or update the recent version of a package, NPM provides us a good way to install a previous 
         version, you can do it with the next code in your console:
 
-        ```
-        npm install express@4.15.1
-        ```
+   ```
+    npm install express@4.15.1
+   ```
 
   - [x] Then, the package.json file will be modified, adding the new express dependency, this time using a version "4.15.1".
   
-        ```
-        "dependencies": {
-          "express": "^4.15.1"
-        }
-        ```
+   ```
+    "dependencies": {
+      "express": "^4.15.1"
+     }
+   ```
   </p>
 </details>
