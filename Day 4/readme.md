@@ -7,8 +7,8 @@
     </p>
 </details>
 
-<details close="">
-  <summary><h2>📦 Creating a Package Manager</h2></summary>
+<details open="">
+  <summary><h2>📦 Creating a Node Package Manager File</h2></summary>
     <p dir="auto">
         package.json is a way to manage the locally installed packages and serves as documentation on which our project depends including a directory which keeps track of all the dependencies our project is using.
     </p>    
@@ -48,7 +48,7 @@ package name: (day-4) day4_package
 </details>
 
 
-<details close="">
+<details open="">
   <summary><h2>📒 Installing a Package</h2></summary>
     <p dir="auto">
         There are two ways to install a package.
@@ -91,7 +91,7 @@ node index.js
 </details>
 
 
-<details close="">
+<details open="">
   <summary><h2>❌Removing a Package</h2></summary>
     <p dir="auto">
 
@@ -120,7 +120,7 @@ npm uninstall express
 </details>
 
 
-<details close="">
+<details open="">
   <summary><h2>✨Installing an Old Version</h2></summary>
     <p dir="auto">
 
@@ -142,7 +142,7 @@ npm uninstall express
 </details>
 
 
-<details close="">
+<details open="">
   <summary><h2>✨Updating an Old Version</h2></summary>
     <p dir="auto">
 
