@@ -112,7 +112,7 @@ console.log("File Written Successfully");
 
 
 <details close="">
-  <summary><h2>💪 Example Appending into a File</h2></summary>
+  <summary><h2>💪 Example Appending to a File</h2></summary>
   <p dir="auto">
     
 - [x] Create a new file, you can name it as "appendme.js".
