@@ -48,8 +48,8 @@ package name: (day-4) day4_package
 </details>
 
 
-<details open="">
-  <summary><h2>📒 Installing a package</h2></summary>
+<details close="">
+  <summary><h2>📒 Installing a Package</h2></summary>
     <p dir="auto">
         There are two ways to install a package.
         <br>
@@ -88,4 +88,33 @@ const express = require('express');
 node index.js
 ```
 - [x] You will see after the execution, the run did not trigger any error.
+</details>
+
+
+<details open="">
+  <summary><h2>❌NPM</h2></summary>
+    <p dir="auto">
+
+  - [x] Now, we have to uninstall the express package, in yout terminal add the next instruction:
+ ```
+npm uninstall express
+```
+- [x] Instantaneously the package will be uninstalled from your path, and the package.json will remove the dependencies.
+ ```
+{
+  "name": "day4_package",
+  "version": "1.0.0",
+  "description": "Defining the day 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "class4"
+  ],
+  "author": "@edwin",
+  "license": "ISC"
+}
+```
+  </p>
 </details>
