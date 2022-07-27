@@ -22,7 +22,7 @@
     </p>
 </details>
 
-<details open="">
+<details close="">
   <summary><h2>💪 Example with Read a File</h2></summary>
   <p dir="auto">
     
@@ -54,11 +54,13 @@ console.log('Content : ' + content);
 ```
   
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%202/2-Server.js">👓 Here</a>
-</details>
-
-- [x] Execute the app using the terminal 'node readme.js', you will see the execution Asynchronously.
+  
+  - [x] Execute the app using the terminal 'node readme.js', you will see the execution Asynchronously.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/readAsychronously.png?raw=true" width ="100%"/>
 
 - [x] Execute the app using the terminal 'node readme.js', you will see the execution Synchronously.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%203/resource/readSychronously.png?raw=true" width ="100%"/>
+</details>
+
+
 
