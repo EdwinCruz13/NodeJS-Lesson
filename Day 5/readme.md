@@ -17,7 +17,7 @@
 - [x] So, in this page, we will discuss the pro and cons using the non-blocking code.
     </p>
 
-    <p dir="auto">
+    <p dir="right">
         Firstly, define some concepts:
     <br>
         * Non-blocking Code: The function whose execution is not affected by other functions/tasks or in simple terms which are asynchronous in nature comes under non-blocking code.
