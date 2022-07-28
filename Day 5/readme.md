@@ -28,3 +28,18 @@
      <br>
      <img src = "https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/blocking%20and%20non%20blocking.png?raw=true" width = "100%" height="480">
 </details>
+
+<details open="">
+  <summary><h2>🚧 Example of Blocking Code</h2></summary>
+    <p dir="auto">
+        In this example, we are going to create a new file named "NonBlocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'synchronous reading', in order to measure the time of execution, lets define variable for a chronometer app.
+    </p>
+    <p dir="auto">
+
+- [x] Capture the time of begining of the application using all the functions from "Date()" library:
+```
+var currentDate = new Date();
+var timeStart = currentDate.getTime();
+```
+</p>
+</details>
