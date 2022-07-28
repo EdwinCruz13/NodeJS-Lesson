@@ -41,7 +41,7 @@
 var currentDate = new Date();
 var timeStart = currentDate.getTime();
 ```
-- [x] Read a file synchronously from the resource path:
+- [x] Read a file synchronously from the resource path, if you want to use the readFileSync function, do not forget require the fs module:
 ###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/text.txt">👓 Here</a>. If you would rather create your own file it's ok, you just have to add some random text.
 ```
 var file = "resources/text.txt";
@@ -58,6 +58,42 @@ var elapsedTime = timeEnd-timeStart;
 console.log("\nStart of execution: " + timeStart + " ms");
 console.log("End of execution: " + timeEnd + " ms");
 console.log("Time of execution: " + elapsedTime + " ms");
+```
+</p>
+<p dir="auto">
+
+- [x] ###### This is the application, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">👓 Here</a>.
+```
+//use the fs module
+var fs = require('fs');
+
+/////////////////////////////////////////////////////////////////////////
+//define a chronometer, this mark is the begining of the execution
+/////////////////////////////////////////////////////////////////////////
+var currentDate = new Date();
+var timeStart = currentDate.getTime();
+
+
+
+//now, we are going to read a file
+var file = "resources/text.txt";
+var content = fs.readFileSync(file);
+
+
+/////////////////////////////////////////////////////////////////////////
+//define a chronometer, this mark is the end of the execution
+/////////////////////////////////////////////////////////////////////////
+var lastDate = new Date();
+var timeEnd = lastDate.getTime();
+
+
+/////////////////////////////////////////////////////////////////////////
+//define a chronometer, this mark the time of execution
+var elapsedTime = timeEnd-timeStart;
+console.log("\nStart of execution: " + timeStart + " ms");
+console.log("End of execution: " + timeEnd + " ms");
+console.log("Time of execution: " + elapsedTime + " ms");
+/////////////////////////////////////////////////////////////////////////
 ```
 </p>
 </details>
