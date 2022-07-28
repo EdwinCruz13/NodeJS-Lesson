@@ -70,7 +70,7 @@ node Blocking.js
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-blocking-code.png?raw=true" width ="100%"/>
 </p>
-
+</details>
 
 <details open="">
   <summary><h2>🔓 Example of Non-Blocking Code</h2></summary>
@@ -118,12 +118,13 @@ node NonBlocking.js
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-nonblocking-code.png?raw=true" width ="100%"/>
 </p>
+</details>
 
 
 
 
-
-
+<details open="">
+  <summary><h2>📜 Scripts</h2></summary>
 <p dir="auto">
 
 - [x] This is the full blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/Blocking.js">👓 Here</a>.
