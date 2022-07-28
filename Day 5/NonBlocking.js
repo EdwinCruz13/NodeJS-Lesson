@@ -1,4 +1,4 @@
-//Name of the File is  : blocking-code.js
+//Name of the File is  : nonblocking-code.js
 
 //use the fs module
 var fs = require('fs');
@@ -11,9 +11,14 @@ var timeStart = currentDate.getTime();
 
 
 
-//now, we are going to read a file
+//now, we are going to read a file synchronously
 var file = "resources/text.txt";
-var content = fs.readFileSync(file);
+fs.readFile(file, (err, data) => {
+	if (err) 
+		throw err;
+		
+	console.log("Im done!!!");
+});
 
 
 /////////////////////////////////////////////////////////////////////////
