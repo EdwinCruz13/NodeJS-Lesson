@@ -3,9 +3,9 @@
 <details open="">
   <summary><h2>✨Overview</h2></summary>
     <p dir="auto">
-        One of the features which distinguishes Node.js is that it uses non-blocking code. Node is assumed to prevent blocking code by using a single-threaded event loop, but, but, but.... 😫 😫 😫
+        One of the features which distinguishes Node.js is that it uses non-blocking code. Node is assumed to prevent blocking code by using a single-threaded event loop, a good idea in order to increase the performents in your application but, but, but.... 😫 😫 😫
         <br>
-        🧐 Consider some scenarios in your application that it is necessary wait for any result of section of code as:
+        🧐 Consider some scenarios in your application what it is necessary wait for any result of section of code as:
         <br>
 
 - [x] Consume any REST API and waiting for results.
@@ -14,7 +14,7 @@
         <br>
 - [x] Reading or Writing data from a file on FileSystem.
         <br>
-- [x] So, in this page, we will discuss the pro and cons using the non-blocking code.
+<a href="#"> So, in this page, we will discuss the pro and cons using the non-blocking code and when we have to execute the application with blocking Code.</a>
         <br>  
     </p>
 
