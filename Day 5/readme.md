@@ -15,11 +15,12 @@
 - [x] Reading or Writing data from a file on FileSystem.
         <br>
 - [x] So, in this page, we will discuss the pro and cons using the non-blocking code.
-        <br>
-        Firstly, define some concepts:
-        <br>
-              * Non-blocking Code: The function whose execution is not affected by other functions/tasks or in simple terms which are asynchronous in nature comes under non-blocking code.
-        <br>
-              * Blocking Code : The function whose execution is affected by other functions/tasks or in simple terms which are synchronous in nature comes under blocking code.
+    </p>
+    <p dir="auto">
+    Firstly, define some concepts:
+    <br>
+        * Non-blocking Code: The function whose execution is not affected by other functions/tasks or in simple terms which are asynchronous in nature comes under non-blocking code.
+    <br>
+        * Blocking Code : The function whose execution is affected by other functions/tasks or in simple terms which are synchronous in nature comes under blocking code.
     </p>
 </details>
