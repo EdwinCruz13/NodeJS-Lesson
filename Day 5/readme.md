@@ -59,10 +59,21 @@ console.log("\nStart of execution: " + timeStart + " ms");
 console.log("End of execution: " + timeEnd + " ms");
 console.log("Time of execution: " + elapsedTime + " ms");
 ```
+- [x] Execute the application using the console:
+```
+node NonBlocking.js
+```
+- [x] You will see the time that it was executed:
+<br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/2-executing-app.png?raw=true" width ="100%"/>
 </p>
+
+
+
+
 <p dir="auto">
 
-- [x] ###### This is the application, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">👓 Here</a>.
+- [x] This is the full script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">👓 Here</a>.
 ```
 //use the fs module
 var fs = require('fs');
