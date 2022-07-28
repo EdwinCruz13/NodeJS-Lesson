@@ -25,4 +25,6 @@
         <br>
 - Blocking Code : The function whose execution is affected by other functions/tasks or in simple terms which are synchronous in nature comes under blocking code.
      </p>
+     <br>
+     <img src = "https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/blocking%20and%20non%20blocking.png?raw=true" width = "100%" height="480">
 </details>
