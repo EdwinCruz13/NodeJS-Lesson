@@ -14,11 +14,11 @@
         <br>
 - [x] Reading or Writing data from a file on FileSystem.
         <br>
-<a href="#"> So, in this page, we will discuss the pro and cons using the non-blocking code and when we have to execute the application with blocking Code.</a>
-        <br>  
     </p>
 
     <p dir="auto">
+<a href="#"> **So, in this page, we will discuss the pro and cons using the non-blocking code and when we have to execute the application with blocking Code.**</a>
+    <br>  
  **Firstly, define some concepts:**
         <br>
 - Non-blocking Code: The function whose execution is not affected by other functions/tasks or in simple terms which are asynchronous in nature comes under non-blocking code.
