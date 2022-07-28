@@ -1,6 +1,6 @@
 # NodeJS-Lesson - Non-Blocking and Blocking code
 
-<details open="">
+<details close="">
   <summary><h2>✨Overview</h2></summary>
     <p dir="auto">
         One of the features which distinguishes Node.js is that it uses non-blocking code. Node is assumed to prevent blocking code by using a single-threaded event loop, a good idea in order to increase the performents in your application but, but, but.... 😫 😫 😫
@@ -40,6 +40,12 @@
 ```
 var currentDate = new Date();
 var timeStart = currentDate.getTime();
+```
+- [x] Read a file synchronously from the resource path:
+###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/1-Hello%20World.js">👓 Here</a>. if you would rather create your own file it's ok, you just have to add some random text.
+```
+var file = "resources/text.txt";
+var content = fs.readFileSync(file);
 ```
 </p>
 </details>
