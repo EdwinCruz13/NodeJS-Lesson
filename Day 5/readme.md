@@ -65,7 +65,7 @@ node NonBlocking.js
 ```
 - [x] You will see the time that it was executed:
 <br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%201/resource/2-executing-app.png?raw=true" width ="100%"/>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-blocking-code.png?raw=true" width ="100%"/>
 </p>
 
 
