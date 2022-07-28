@@ -1,6 +1,6 @@
 # NodeJS-Lesson - Non-Blocking and Blocking code
 
-<details close="">
+<details open="">
   <summary><h2>✨Overview</h2></summary>
     <p dir="auto">
         One of the features which distinguishes Node.js is that it uses non-blocking code. Node is assumed to prevent blocking code by using a single-threaded event loop, a good idea in order to increase the performents in your application but, but, but.... 😫 😫 😫
@@ -29,7 +29,7 @@
      <img src = "https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/blocking%20and%20non%20blocking.png?raw=true" width = "100%" height="480">
 </details>
 
-<details close="">
+<details open="">
   <summary><h2>🚧 Example of Blocking Code</h2></summary>
   
   **Blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes. This happens because the event loop is unable to continue running JavaScript while a blocking operation is occurring.**
