@@ -29,7 +29,7 @@
      <img src = "https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/blocking%20and%20non%20blocking.png?raw=true" width = "100%" height="480">
 </details>
 
-<details open="">
+<details close="">
   <summary><h2>🚧 Example of Blocking Code</h2></summary>
   
   **Blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes. This happens because the event loop is unable to continue running JavaScript while a blocking operation is occurring.**
@@ -70,6 +70,51 @@ node NonBlocking.js
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-blocking-code.png?raw=true" width ="100%"/>
 </p>
+
+
+<details open="">
+  <summary><h2>🔓 Example of Non-Blocking Code</h2></summary>
+  
+  **Non-blocking execution refers to execution that doesn’t run in the sequence it appears in the code. In Non-blocking programming the program doesn’t wait for the task to complete and can move on to the next task.**
+ <br>
+    <p dir="auto">
+        In this example, we are going to create a new file named "NonBlocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'synchronous reading', in order to measure the time of execution, lets define variable for a chronometer app.
+    </p>
+    <p dir="auto">
+
+- [x] Capture the time of begining of the application using all the functions from "Date()" library:
+```
+var currentDate = new Date();
+var timeStart = currentDate.getTime();
+```
+- [x] Read a file synchronously from the resource path, if you want to use the readFileSync function, do not forget require the fs module:
+###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/text.txt">👓 Here</a>. If you would rather create your own file it's ok, you just have to add some random text.
+```
+var file = "resources/text.txt";
+var content = fs.readFileSync(file);
+```
+- [x] Then, caputre the time of ending of the application using Date() function again into other variables:
+```
+var lastDate = new Date();
+var timeEnd = lastDate.getTime();
+```
+- [x] Using a 'console.log' show the result after of execution:
+```
+var elapsedTime = timeEnd-timeStart;
+console.log("\nStart of execution: " + timeStart + " ms");
+console.log("End of execution: " + timeEnd + " ms");
+console.log("Time of execution: " + elapsedTime + " ms");
+```
+- [x] Execute the application using the console:
+```
+node NonBlocking.js
+```
+- [x] You will see the time that it was executed:
+<br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-blocking-code.png?raw=true" width ="100%"/>
+</p>
+
+
 
 
 
