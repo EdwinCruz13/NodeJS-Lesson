@@ -14,6 +14,7 @@ var timeStart = currentDate.getTime();
 //now, we are going to read a file
 var file = "resources/text.txt";
 var content = fs.readFileSync(file);
+console.log("Im done!!!")
 
 
 /////////////////////////////////////////////////////////////////////////
