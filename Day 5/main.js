@@ -4,7 +4,12 @@
 console.log(msg);*/
 
 //import from exports.js
-var msg2 = require('./exports.js');
+/*var msg2 = require('./exports.js');
 //print the result
-console.log(msg2);
+console.log(msg2);*/
+
+//import from exports.js
+var msg3 = require('./export.function.js');
+//print the result
+msg3('Hello World');
 

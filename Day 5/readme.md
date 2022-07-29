@@ -13,7 +13,7 @@
 <details open="">
   <summary><h2>🚢 Exporting a file</h2></summary>
   
-  **The module.exports is a special object which is included in every JavaScript file in the Node.js application by default. The module is a variable that represents the current module, and exports is an object that will be exposed as a module. So, whatever you assign to module.exports will be exposed as a module.**
+  **<h2>The module.exports is a special object which is included in every JavaScript file in the Node.js application by default. The module is a variable that represents the current module, and exports is an object that will be exposed as a module. So, whatever you assign to module.exports will be exposed as a module.</h2>**
  <br>
     <p dir="auto">
 
@@ -33,7 +33,7 @@ console.log(msg)
 </p>
 <br>
 
- **<h2>The exports is an object. So, you can attach properties or methods to it. The following example exposes an object with a string property in exports.js file.</h2>**
+ **<h2>The "exports" is an object. So, you can attach properties or methods to it. The following example exposes an object with a string property in exports.js file.</h2>**
 <br>
 <p dir="auto">
 
@@ -50,5 +50,26 @@ console.log(msg2);
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result2.png?raw=true" width ="100%"/>
 </p>
+<br>
+**<h2>You can attach an anonymous function to exports object as shown below:</h2>**
+<br>
+<p dir="auto">
+
+- [x] Create a file named "export.function.js" and add the next sentence:
+```
+module.exports = function (msg) { 
+    console.log(msg);
+};
+```
+- [x] Now, use the keyword import in orden to use the funcionality from "export.function.js". PD: do not forget the "./"
+```
+//import from exports.js
+var msg3 = require('./export.function.js');
+//print the result
+msg3('Hello World');
+```
+<br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result3.png?raw=true" width ="100%"/>
+
 
 </details>
