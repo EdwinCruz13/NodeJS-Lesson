@@ -3,7 +3,7 @@
 <details open="">
   <summary><h2>✨Overview</h2></summary>
     <p dir="auto">
-        In the class <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%204">Day 2 - Node Package Manager.<a/> we learnt about the node package manager and ways to install, update and delete any package to our application using the ***keyword*** "require", that is how we use a module from another library, that is known as modularization.
+        In the class <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%202">Day 2 - Node Package Manager.<a/> we learnt about the node package manager and ways to install, update and delete any package to our application using the ***keyword*** "require", that is how we use a module from another library, that is known as modularization.
         <br>
         🧐 Now, it's time to create our own modules and to import a main file in order to modularize the application.
         <br>
@@ -29,6 +29,6 @@ var msg = require('./module.exports.js');
 console.log(msg)
 ```
 <br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/resources/example-blocking-code.png?raw=true" width ="100%"/>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result.png?raw=true" width ="100%"/>
 </p>
 </details>
