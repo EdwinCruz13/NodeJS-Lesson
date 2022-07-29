@@ -78,7 +78,7 @@ node Blocking.js
   **Non-blocking execution refers to execution that doesn’t run in the sequence it appears in the code. In Non-blocking programming the program doesn’t wait for the task to complete and can move on to the next task.**
  <br>
     <p dir="auto">
-        In this example, we are going to create a new file named "NonBlocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/NonBlocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'Asynchronous reading', in order to measure the time of execution, lets define variable for a chronometer app (Although it is not necessary because the non-blocking execution will perform the operation before the reading of file).
+        In this example, we are going to create a new file named "NonBlocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/nonBlocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'Asynchronous reading', in order to measure the time of execution, lets define variable for a chronometer app (Although it is not necessary because the non-blocking execution will perform the operation before the reading of file).
     </p>
     <p dir="auto">
 
