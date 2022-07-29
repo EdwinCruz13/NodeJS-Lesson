@@ -33,7 +33,7 @@ console.log(msg)
 </p>
 <br>
 
- * - **The exports is an object. So, you can attach properties or methods to it. The following example exposes an object with a string property in exports.js file.**
+ **<h2>The exports is an object. So, you can attach properties or methods to it. The following example exposes an object with a string property in exports.js file.</h2>**
 <br>
 <p dir="auto">
 
