@@ -164,8 +164,8 @@ console.log("Time of execution: " + elapsedTime + " ms");
 
 <p dir="auto">
 
-- [x] This is the full non-blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/NonBlocking.js">👓 Here</a>.
-```
+- [x] This is the full non-blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/nonBlocking.js">👓 Here</a>.
+``` 
 //use the fs module
 var fs = require('fs');
 
