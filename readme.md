@@ -13,7 +13,7 @@ Node.js was built on top of Google's V8 JavaScript engine since it was open-sour
 </details>
 
 
-<details open="">
+<details close="">
   <summary><h2>✨NodeJS is used for the followings companies around the world</h2></summary>
 <p dir="auto">
   </br>
