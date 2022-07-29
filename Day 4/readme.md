@@ -26,7 +26,7 @@
 - Blocking Code : The function whose execution is affected by other functions/tasks or in simple terms which are synchronous in nature comes under blocking code.
      </p>
      <br>
-     <img src = "https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/blocking%20and%20non%20blocking.png?raw=true" width = "100%" height="480">
+     <img src = "https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/resources/blocking%20and%20non%20blocking.png" width = "100%" height="480">
 </details>
 
 <details open="">
@@ -35,7 +35,7 @@
   **Blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes. This happens because the event loop is unable to continue running JavaScript while a blocking operation is occurring.**
  <br>
     <p dir="auto">
-        In this example, we are going to create a new file named "Blocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/Blocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'synchronous reading', in order to measure the time of execution, lets define variable for a chronometer app.
+        In this example, we are going to create a new file named "Blocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/Blocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'synchronous reading', in order to measure the time of execution, lets define variable for a chronometer app.
     </p>
     <p dir="auto">
 
@@ -45,7 +45,7 @@ var currentDate = new Date();
 var timeStart = currentDate.getTime();
 ```
 - [x] Read a file synchronously from the resource path, if you want to use the readFileSync function, do not forget require the fs module:
-###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/text.txt">👓 Here</a>. If you would rather create your own file it's ok, you just have to add some random text.
+###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/resources/text.txt">👓 Here</a>. If you would rather create your own file it's ok, you just have to add some random text.
 ```
 var file = "resources/text.txt";
 var content = fs.readFileSync(file);
@@ -68,7 +68,7 @@ node Blocking.js
 ```
 - [x] You will see the time that it was executed:
 <br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-blocking-code.png?raw=true" width ="100%"/>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/resources/example-blocking-code.png?raw=true" width ="100%"/>
 </p>
 </details>
 
@@ -78,7 +78,7 @@ node Blocking.js
   **Non-blocking execution refers to execution that doesn’t run in the sequence it appears in the code. In Non-blocking programming the program doesn’t wait for the task to complete and can move on to the next task.**
  <br>
     <p dir="auto">
-        In this example, we are going to create a new file named "NonBlocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'Asynchronous reading', in order to measure the time of execution, lets define variable for a chronometer app (Although it is not necessary because the non-blocking execution will perform the operation before the reading of file).
+        In this example, we are going to create a new file named "NonBlocking.js", it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/NonBlocking.js">🔗 HERE!!!</a>. The porpurse of this file is read a .txt file from a path (resource) using a 'Asynchronous reading', in order to measure the time of execution, lets define variable for a chronometer app (Although it is not necessary because the non-blocking execution will perform the operation before the reading of file).
     </p>
     <p dir="auto">
 
@@ -88,7 +88,7 @@ var currentDate = new Date();
 var timeStart = currentDate.getTime();
 ```
 - [x] Read a file synchronously from the resource path, if you want to use the readFileSync function, do not forget require the fs module:
-###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/text.txt">👓 Here</a>. If you would rather create your own file it's ok, you just have to add some random text.
+###### the text.txt can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/resources/text.txt">👓 Here</a>. If you would rather create your own file it's ok, you just have to add some random text.
 ```
 var file = "resources/text.txt";
 fs.readFile(file, (err, data) => {
@@ -116,7 +116,7 @@ node NonBlocking.js
 ```
 - [x] You will see the time that it was executed:
 <br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/example-nonblocking-code.png?raw=true" width ="100%"/>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/resources/example-nonblocking-code.png?raw=true" width ="100%"/>
 </p>
 </details>
 
@@ -127,7 +127,7 @@ node NonBlocking.js
   <summary><h2>📜 Scripts</h2></summary>
 <p dir="auto">
 
-- [x] This is the full blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/Blocking.js">👓 Here</a>.
+- [x] This is the full blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/Blocking.js">👓 Here</a>.
 ```
 //use the fs module
 var fs = require('fs');
@@ -164,7 +164,7 @@ console.log("Time of execution: " + elapsedTime + " ms");
 
 <p dir="auto">
 
-- [x] This is the full non-blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/NonBlocking.js">👓 Here</a>.
+- [x] This is the full non-blocking script, or, it can be found <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%204/NonBlocking.js">👓 Here</a>.
 ```
 //use the fs module
 var fs = require('fs');
