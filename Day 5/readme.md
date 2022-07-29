@@ -31,4 +31,24 @@ console.log(msg)
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result.png?raw=true" width ="100%"/>
 </p>
+<br>
+
+  **The exports is an object. So, you can attach properties or methods to it. The following example exposes an object with a string property in exports.js file.**
+<br>
+<p dir="auto">
+
+- [x] Create a file named "exports.js" and add the next sentence:
+```
+exports.SimpleMessage = 'Hello world';
+```
+- [x] Now, use the keyword import in orden to use the funcionality from "exports.js". PD: do not forget the "./"
+```
+var msg2 = require('./exports.js');
+//print the result
+console.log(msg2);
+```
+<br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result.png?raw=true" width ="100%"/>
+</p>
+
 </details>
