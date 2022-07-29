@@ -51,6 +51,7 @@ console.log(msg2);
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result2.png?raw=true" width ="100%"/>
 </p>
 <br>
+
 **<h2>You can attach an anonymous function to exports object as shown below:</h2>**
 <br>
 <p dir="auto">
@@ -63,13 +64,40 @@ module.exports = function (msg) {
 ```
 - [x] Now, use the keyword import in orden to use the funcionality from "export.function.js". PD: do not forget the "./"
 ```
-//import from exports.js
+//import from export.function.js
 var msg3 = require('./export.function.js');
 //print the result
 msg3('Hello World');
 ```
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result3.png?raw=true" width ="100%"/>
+</p>
+<br>
 
+**<h2>In JavaScript, a function can be treated like a class, the following example exposes a function that can be used like a class</h2>**
+<br>
+<p dir="auto">
+
+- [x] Create a file named "export.class.js" and add the next sentence:
+```
+module.exports = function (firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = function () { 
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+```
+- [x] Now, use the keyword import in orden to use the funcionality from "export.class.js". PD: do not forget the "./"
+```
+var person = require('./export.class.js');
+//create a new object
+var person1 = new person('Timmy', 'Turner');
+console.log(person1.fullName());
+
+```
+<br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%205/resources/result4.png?raw=true" width ="100%"/>
+</p>
 
 </details>
