@@ -115,7 +115,7 @@ var port = 3000; // default port
 ```
 - [x] Now, we are going to instance the HTTP Server.
 - [x] Throught the arrow function add a "writeHead" method using the parameters "http code {200}" and "Content-Type text/html".
-- [x] Use the function "end" in order to send a csv response like this ↓.
+- [x] Use the function "end" in order to send a html response like this ↓.
 ```
 //require http module
 const http = require('http');
@@ -169,7 +169,7 @@ var htmlFile = fs.readFileSync(filename);
 ```
 - [x] Now, we are going to instance the HTTP Server.
 - [x] Throught the arrow function add a "writeHead" method using the parameters "http code {200}" and "Content-Type text/html".
-- [x] Use the function "end" in order to send a csv response like this ↓.
+- [x] Use the function "end" in order to send a file that was read before like this ↓.
 ```
 //require http module
 const http = require('http');
