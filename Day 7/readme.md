@@ -21,7 +21,7 @@
   <summary><h2>💪 Example Sending a Json Files</h2></summary>
   <p dir="auto">
     
-- [x] It is time to create a new file, you can name it as "http-json.js".
+- [x] Create a new file, you can name it as "http-json.js".
 - [x] Add the next code:
 ```
 var http = require('http');
@@ -31,30 +31,20 @@ var http = require('http');
 var host = '127.0.0.1'; //localhost
 var port = 3000; // default port
 ```
-- [x] Create a server using the createServer() method. createServer() method takes a callback function as arguments. This callback is executed each time a request is received. The two arguments of createServer() method are:
-- request : which contains all the information related to client's request such as URL, custom headers , client info , etc.
-- response : which is used to return the data back to the client.
-- [x] Inside the arrow function, write the next method throuht response arguments.
-- response.writeHead: it is an inbuilt method which is used to send the status code and the <a href="https://en.wikipedia.org/wiki/Media_type"> MIME type </a>.
-- response.end(): it is an inbuilt function which is used to tell the server that the request has been fulfilled. Along with that we can also send one response using this.
+- [x] Now, we are going to instance the HTTP Server.
+- [x] Throught the arrow function add a "writeHead" method using parametro "http code {200}" and "Content-Type {application/json}".
+- [x] Use the function "end" in order to send a json response like this {"message": "This is a JSON response", "shown": true}.
 ```
-var server = http.createServer((request, response) => {
-    //Sends a response header to the request. 
-    //The status code is a 3-digit HTTP status code, like 200. The last argument, headers, are the response headers
-    response.writeHead(200, { "Content-Type" : "text/plain"})
-    response.end('Server Working Success');
-});
-```
-- [x] Then we have to use the method named 'listen' thay would help to run the server accordint the host and port:
-```
-server.listen(port, host, (error) => {
-    if(error)   
-        return console.error(`Error has occured: ${error}`);
-
+http.createServer((req, resp) => {
+    //message 
     console.log(`Server is listening on ${host}:${port}`);
-});
+
+    //Define Content-Type
+    resp.writeHead(200, { "Content-Type" : "application/json"});
+
+    resp.end(`{"message": "This is a JSON response", "shown": true}`);
+}).listen(port)
 ```
-  
-  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%202/2-Server.js">👓 Here</a>
+  ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/http-json.js">👓 Here</a>
 </details>
 
