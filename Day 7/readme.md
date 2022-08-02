@@ -47,7 +47,7 @@ http.createServer((req, resp) => {
 ```
 - [x] Execute using the terminal.
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-1.png?raw=true" width ="100%"/>
-<br>
+</br></br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-2.png?raw=true" width ="100%"/>
 
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/http-json.js">👓 Here</a>
