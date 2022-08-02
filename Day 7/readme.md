@@ -46,9 +46,9 @@ http.createServer((req, resp) => {
 }).listen(port)
 ```
 - [x] Execute using the terminal.
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-1.png?raw=true" width ="100%"/>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-3.png?raw=true" width ="100%"/>
 </br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-2.png?raw=true" width ="100%"/>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-4.png?raw=true" width ="100%"/>
 
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/http-json.js">👓 Here</a>
 </details>
@@ -89,6 +89,10 @@ http.createServer((req, resp) => {
     resp.end('seccion 1, seccion 2, seccion 3, seccion 4, seccion 5');
 }).listen(port)
 ```
+- [x] Execute using the terminal.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-1.png?raw=true" width ="100%"/>
+</br></br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-2.png?raw=true" width ="100%"/>
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/http-csv.js">👓 Here</a>
 </details>
 
@@ -129,6 +133,11 @@ http.createServer((req, resp) => {
     resp.end(`<h1>Hello World</h1><br><h4>I am working on ${host}:${port}</h4>`);
 }).listen(port)
 ```
+- [x] Execute using the terminal.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-5.png?raw=true" width ="100%"/>
+</br></br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-6.png?raw=true" width ="100%"/>
+
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/http-html.js">👓 Here</a>
 </details>
 
@@ -184,6 +193,11 @@ http.createServer((req, resp) => {
     resp.end(htmlFile);
 }).listen(port)
 ```
+- [x] Execute using the terminal.
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-7.png?raw=true" width ="100%"/>
+</br></br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/resources/image-8.png?raw=true" width ="100%"/>
+
   ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%207/http-html-file.js">👓 Here</a>
 </details>
 
