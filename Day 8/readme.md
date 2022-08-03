@@ -104,7 +104,7 @@ npm install express
 
 
 <details open="">
-<summary><h2>💬 Run your Express Server</h2></summary>
+<summary><h2>🏃‍♀️ Run your Express Server</h2></summary>
   <p dir="auto">
 
 - [x] Now open the index.js file that was created before.
@@ -131,7 +131,7 @@ app.listen(3000, () => {
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file5.png?raw=true" width ="100%"/>
 </br></br>
 
-- [x] <h2>In your browser you will see a kind of error, It is not!!!</h2>, the reason is you did not define any "route" and a "content-type" that the browser could understand, before the execution command, add the next command and execute the app again.
+- [x] <h3>In your browser you will see a kind of error, It is not!!!</h3>, the reason is you did not define any "route" and a "content-type" that the browser could understand, before the execution command, add the next command and execute the app again.
 ```
 //define a main route
 app.get("/", (req, res) => {
