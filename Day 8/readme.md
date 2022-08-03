@@ -6,8 +6,12 @@
         Express is a minimal and flexible Node.js web application framework that provides 
         a robust set of features for web and mobile applications. This framework can be found in the next link <a href="https://www.npmjs.com/package/express">🔗 Over Here!!!</a>
         <br>
-        Express offers some advantage and of course with a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.
+        Express gives you an API, submodules, functions, and methodology and conventions for quickly and easily typing together all the components necessary to put up a modern, functional web server with all the conveniences necessary for that (static asset hosting, templating, handling CSRF, CORS, cookie parsing, POST data handling, and many more functionalities.
         <br>
+        Then, why do I make my application with express?!, we have to know the difference between Http and Express:
+        <p>
+          <figure class="table"><table><tbody><tr><td><p style="text-align:center">HTTP</p></td><td><p style="text-align:center">Express</p></td></tr><tr><td>HTTP comes inbuilt along with NodeJS that is, we don’t need to install it explicitly.&nbsp;</td><td>Express is installed explicitly using npm command: <i>npm install express&nbsp;</i></td></tr><tr><td>HTTP is not a framework as a whole, rather it is just a module.</td><td>Express is a framework as a whole.</td></tr><tr><td>HTTP does not provide function for static hosting, you require to write your own.</td><td>Express provide <i>express.static </i>function for static asset hosting. Example: <i>app.use(express.static(‘public’));</i></td></tr><tr><td>HTTP is an independent module.</td><td>Express is made on top of the HTTP module.</td></tr><tr><td>HTTP module provides various tools (functions) to do things for networking like making a server, client, etc.</td><td>Express along with what HTTP does provide many more functions in order to make development easy.</td></tr></tbody></table></figure>
+        </p>
     </p>
 </details>
 
