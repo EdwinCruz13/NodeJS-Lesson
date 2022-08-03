@@ -1,0 +1,28 @@
+{
+  "name": "expresspackage_example",
+  "version": "1.0.0",
+  "description": "example using express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwinCruz13/NodeJS-Lesson.git"
+  },
+  "keywords": [
+    "express",
+    "framework",
+    "nodejs",
+    "mern"
+  ],
+  "author": "EdwinCruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwinCruz13/NodeJS-Lesson/issues"
+  },
+  "homepage": "https://github.com/EdwinCruz13/NodeJS-Lesson#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
