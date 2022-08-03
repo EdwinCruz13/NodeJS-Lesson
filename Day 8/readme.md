@@ -98,6 +98,15 @@ npm install express
 }
 ```
 - [x] node_module folder is where the new packages will be executed.
+</p>
+</details>
+
+
+
+<details open="">
+<summary><h2>💬 Run your Express Server</h2></summary>
+  <p dir="auto">
+
 - [x] Now open the index.js file that was created before.
 - [x] It is time to import express using the next command.
 ```
@@ -134,6 +143,7 @@ app.get("/", (req, res) => {
 </br></br>
 
 ###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/index.js">👓 Here</a>
+</p>
 </details>
 
 
