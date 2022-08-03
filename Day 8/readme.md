@@ -131,7 +131,7 @@ app.listen(3000, () => {
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file5.png?raw=true" width ="100%"/>
 </br></br>
 
-- [x] <h3>In your browser you will see a kind of error, It is not!!!</h3>, the reason is you did not define any "route" and a "content-type" that the browser could understand, before the execution command, add the next command and execute the app again.
+- [x] <h3>In your browser you will see a kind of error, It is not!!!</h3>, the reason is we did not define any "route" and a "content-type" that the browser could understand, before the execution command, add the next command after the instancing of express and execute the app again.
 ```
 //define a main route
 app.get("/", (req, res) => {
