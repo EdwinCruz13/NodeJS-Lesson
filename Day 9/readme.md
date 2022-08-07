@@ -142,8 +142,6 @@ app.get('/users/:userId', (req, res) => {
   
    **Now, you can exceed and make a complex route like this**
 
-  <br>
-
   ```
   //define a route, then define a parameter names as "userId" and "bookID", those parameters can be reached through "req.params" syntanx:
 app.get(`/users/:userId/books/:bookId`, (req, res) => {
