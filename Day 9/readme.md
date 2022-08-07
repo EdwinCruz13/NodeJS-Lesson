@@ -176,7 +176,9 @@ Express is a routing and middleware web framework that has minimal functionality
 
   <br>
   If the current middleware function does not end the request-response cycle, it must call *next()* to pass control to the next middleware function. Otherwise, the request will be left hanging.
+  
   <br>
+
   ```
   //defining a middleware
   app.use((req, res, next) => {
