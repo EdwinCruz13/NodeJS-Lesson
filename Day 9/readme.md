@@ -4,19 +4,18 @@
   <summary><h2>✨ Express - Routing</h2></summary>
     <p dir="auto">
         Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing. Each route can have one or more handler functions, which are executed when the route is matched. Route definition takes the following structure:
-        <br>
-        ```
-        app.METHOD(PATH, HANDLER)
-        ```
-        <br>
-        App is an instance of express.
-        <br>
-        METHOD is an HTTP request method, in lowercase.
-        <br>
-        PATH is a path on the server.
-        <br>
-        HANDLER is the function executed when the route is matched.
-    </p>
+ <br>
+      
+ ```
+ app.METHOD(PATH, HANDLER)
+ ```
+ <br>
+      
+ - **App** is an instance of express.
+ - **METHOD** is an HTTP request method, in lowercase.
+ - **PATH** is a path on the server.
+ - **HANDLER** is the function executed when the route is matched.
+ </p>
 </details>
 
 <details open="">
