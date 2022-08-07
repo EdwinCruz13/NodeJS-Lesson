@@ -25,6 +25,7 @@
   </p>
 
   <p>
+    **Below is a table summarizing recommended return values of the primary HTTP methods in combination with the resource URIs:**
     <figure class="table">
       <table>
         <tbody>
@@ -33,7 +34,6 @@
             <td><p style="text-align:center">CRUD</p></td>
             <td><p style="text-align:center">Description</p></td>
             <td><p style="text-align:center">Example</p></td>
-            <td><p style="text-align:center">Entire Collection</p></td>
             <td><p style="text-align:center">Specific Item</p></td>
           </tr>
           <tr>
@@ -42,7 +42,6 @@
             <td>The POST verb is most-often utilized to **create** new resources. In particular, it's used to create subordinate resources. 
                 That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc</td>
             <td>POST http://www.example.com/customers</td>
-            <td>201 (Created), 'Location' header with link to /customers/{id} containing new ID</td>
             <td>404 (Not Found), 409 (Conflict) if resource already exists</td>
           </tr>
           <tr>
@@ -51,7 +50,6 @@
             <td>The HTTP GET method is used to **read** (or retrieve) a representation of a resource. In the “happy” (or non-error) path, 
                 GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST)</td>
             <td>GET http://www.example.com/customers/12345</td>
-            <td>200 (OK), list of customers. Use pagination, sorting and filtering to navigate big lists</td>
             <td>200 (OK), single customer. 404 (Not Found), if ID not found or invalid</td>
           </tr>
           <tr>
@@ -60,7 +58,6 @@
             <td>PUT is most-often utilized for **update** capabilities, PUT-ing to a known resource URI with 
                 the request body containing the newly-updated representation of the original resource.</td>
             <td>PUT http://www.example.com/customers/12345</td>
-            <td>405 (Method Not Allowed), unless you want to update/replace every resource in the entire collection.</td>
             <td>200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid</td>
           </tr>
           <tr>
@@ -68,7 +65,6 @@
             <td>Update/Modify</td>
             <td>PATCH is used for **modify** capabilities. The PATCH request only needs to contain the changes to the resource, not the complete resource</td>
             <td>PATCH http://www.example.com/customers/12345</td>
-            <td>405 (Method Not Allowed), unless you want to modify the collection itself</td>
             <td>200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid</td>
           </tr>
            <tr>
@@ -76,7 +72,6 @@
             <td>Delete</td>
             <td>DELETE is pretty easy to understand. It is used to **delete** a resource identified by a URI.</td>
             <td>DELETE http://www.example.com/customers/12345</td>
-            <td>405 (Method Not Allowed), unless you want to delete the whole collection—not often desirable</td>
             <td>200 (OK). 404 (Not Found), if ID not found or invalid</td>
           </tr>
         </tbody>
