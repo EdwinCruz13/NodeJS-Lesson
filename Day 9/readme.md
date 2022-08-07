@@ -34,21 +34,21 @@
             <td><p style="text-align:center">CRUD</p></td>
             <td><p style="text-align:center">Description</p></td>
             <td><p style="text-align:center">Example</p></td>
-            <td><p style="text-align:center">Specific Item</p></td>
+            <td><p style="text-align:center">Exit</p></td>
           </tr>
           <tr>
             <td>POST</td>
             <td>Create</td>
             <td>The POST verb is most-often utilized to **create** new resources. In particular, it's used to create subordinate resources. 
-                That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc</td>
+                In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc</td>
             <td>POST http://www.example.com/customers</td>
             <td>404 (Not Found), 409 (Conflict) if resource already exists</td>
           </tr>
           <tr>
             <td>GET</td>
             <td>Read</td>
-            <td>The HTTP GET method is used to **read** (or retrieve) a representation of a resource. In the “happy” (or non-error) path, 
-                GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST)</td>
+            <td>The HTTP GET method is used to **read** or retrieve a representation of a resource.
+                GET returns a representation in XML or JSON and an HTTP response code of 200 (OK)</td>
             <td>GET http://www.example.com/customers/12345</td>
             <td>200 (OK), single customer. 404 (Not Found), if ID not found or invalid</td>
           </tr>
