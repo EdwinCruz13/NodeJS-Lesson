@@ -98,45 +98,19 @@ app.post('/', (req, res) => {
 
 
 <details open="">
-<summary><h2>🏃‍♀️ Run your Express Server</h2></summary>
-  <p dir="auto">
+<summary><h2>🚶 Route paths</h2></summary>
+<p dir="auto">
+Route paths, in combination with a request method, define the endpoints at which requests can be made. Route paths can be strings, string patterns, or regular expressions.
+  <br>
+   **This route path will match requests made to /home**
+  <br>
 
-- [x] Now open the index.js file that was created before.
-- [x] It is time to import express using the next command.
-```
-const express = require('express');
-```
-- [x] Then, instance express into a object.
-```
-const app = express();
-```
-- [x] Finally, execute the application as webserver like this way:
-```
-app.listen(3000, () => {
-    console.log(`Server on port 3000`)
-})
-```
-</br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file4.png?raw=true" width ="100%"/>
-</br></br>
-
-- [x] Open your browser and check your webserver:
-</br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file5.png?raw=true" width ="100%"/>
-</br></br>
-
-- [x] <h3>In your browser you will see a kind of error, It is not!!!</h3>, the reason is we did not define any "route" and a "content-type" that the browser could understand, before the execution command, add the next command after the instancing of express and execute the app again.
-```
-//define a main route
-app.get("/", (req, res) => {
-    res.send("Hello world")
-})
-```
-</br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file6.png?raw=true" width ="100%"/>
-</br></br>
-
-###### This example can be found in the repository <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/index.js">👓 Here</a>
+  ```
+  app.get('/home', (req, res) => {
+    res.send('home');
+  });
+  ```
+  <br>
 </p>
 </details>
 

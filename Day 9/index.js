@@ -9,6 +9,11 @@ app.get("/", (req, res) => {
     res.send("Hello world")
 });
 
+//use a get request in order to get a route
+app.get('/home', (req, res) => {
+    res.send('Hello world from home');
+  });
+
 
 //execute the express framework
 app.listen(3000, () => {
