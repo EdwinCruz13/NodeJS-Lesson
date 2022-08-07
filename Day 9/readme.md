@@ -5,11 +5,9 @@
     <p dir="auto">
         Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing. Each route can have one or more handler functions, which are executed when the route is matched. Route definition takes the following structure:
         <br>
-
         ```
         app.METHOD(PATH, HANDLER)
         ```
-
         <br>
         App is an instance of express.
         <br>
