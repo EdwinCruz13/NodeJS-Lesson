@@ -78,6 +78,21 @@
       </table>
     </figure>
   </p>
+  <p dir="auto">
+
+- [x] A route method is derived from one of the HTTP methods, and is attached to an instance of the express class. The following code is an example of routes that are defined for the GET and the POST methods to the root of the app.
+```
+// GET method route
+app.get('/', (req, res) => {
+  res.send('GET request to the homepage')
+})
+
+// POST method route
+app.post('/', (req, res) => {
+  res.send('POST request to the homepage')
+})
+```
+  </p>
 </details>
 
 
