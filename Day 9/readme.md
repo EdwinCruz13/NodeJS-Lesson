@@ -175,10 +175,8 @@ Express is a routing and middleware web framework that has minimal functionality
   - **Call the next middleware function in the stack.**
 
   <br>
-  If the current middleware function does not end the request-response cycle, it must call *next()* to pass control to the next middleware function. Otherwise, the request will be left hanging.
-  
-  <br>
 
+  - [x] If the current middleware function does not end the request-response cycle, it must call *next()* to pass control to the next middleware function. Otherwise, the request will be left hanging.
   ```
   //defining a middleware
   app.use((req, res, next) => {
@@ -190,7 +188,8 @@ Express is a routing and middleware web framework that has minimal functionality
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r4.png?raw=true" width ="100%"/>
   <br><br>
 
-   **Now, we are going to add a new middleware that will be executed when the users path is reached through http://localhost:3000/users/1**
+   - [x] **Now, we are going to add a new middleware that will be executed when the users path is reached through http://localhost:3000/users/1**
+ 
   ```
 //define a middleware for a users route
 app.use('/users/:userId', (req, res, next) => {
@@ -204,7 +203,7 @@ app.get('/users/:userId', (req, res) => {
     res.send(`Hello world from users: the id entered is ${params.userId}`);
 });
 ```
-<br>
+
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r5.png?raw=true" width ="100%"/>
 </p>
