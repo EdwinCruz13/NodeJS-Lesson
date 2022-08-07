@@ -111,6 +111,8 @@ Route paths, in combination with a request method, define the endpoints at which
   });
   ```
   <br>
+  </br></br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r1.png?raw=true" width ="100%"/>
 </p>
 </details>
 
