@@ -107,12 +107,50 @@ Route paths, in combination with a request method, define the endpoints at which
 
   ```
   app.get('/home', (req, res) => {
-    res.send('home');
+    res.send('Hello world from home');
   });
   ```
   <br>
-  </br></br>
+  <br>
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r1.png?raw=true" width ="100%"/>
+</p>
+</details>
+
+
+<details open="">
+<summary><h2>🚶 Route parameters</h2></summary>
+<p dir="auto">
+A Route can accept dynamic values within a path, so called route parameters. Route parameters are named URL segments that are used to capture the values specified at their position in the URL. The captured values are populated in the **req.params** object, with the name of the route parameter as their key.
+  <br>
+   **This route path will match requests made to /users/{id}**
+  <br>
+
+  ```
+  //define a route, then define a parameter names as "userId", that parameter can be reached through "req.params" syntanx:
+app.get('/users/:userId', (req, res) => {
+    var params = req.params;
+    res.send(`Hello world from users: the id entered is ${params.userId}`);
+});
+
+  ```
+  <br>
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r2.png?raw=true" width ="100%"/>
+  <br>
+   **Now, you can exceed and make a complex route like this**
+  <br>
+
+  ```
+  //define a route, then define a parameter names as "userId" and "bookID", those parameters can be reached through "req.params" syntanx:
+app.get(`/users/:userId/books/:bookId`, (req, res) => {
+    var params = req.params;
+    res.send(`Hello world from users/book: the userId entered is ${params.userId} and bookId is ${params.bookId}`);
+});
+
+  ```
+  <br>
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r3.png?raw=true" width ="100%"/>
 </p>
 </details>
 
