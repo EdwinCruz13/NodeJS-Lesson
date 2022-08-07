@@ -34,16 +34,20 @@ app.get('/users/:userId', (req, res) => {
 });
 
 
-
-
-
-
-
 //define a route, then define a parameter names as "userId" and "bookID", those parameters can be reached through "req.params" syntanx:
 app.get(`/users/:userId/books/:bookId`, (req, res) => {
     var params = req.params;
     res.send(`Hello world from users/book: the userId entered is ${params.userId} and bookId is ${params.bookId}`);
 });
+
+
+//add a middleware by callbacks
+app.get('/example/b', (req, res, next) => {
+    console.log('the response will be sent by the next function ...')
+  next()
+  }, (req, res) => {
+    res.send('Hello from B!')
+  })
 
 
 //execute the express framework

@@ -212,7 +212,26 @@ app.get('/users/:userId', (req, res) => {
 <details open="">
 <summary><h2>🪛 Route handlers</h2></summary>
 <p dir="auto">
+You can provide multiple callback functions that behave like middleware to handle a request. The only exception is that these callbacks might invoke next('route') to bypass the remaining route callbacks. You can use this mechanism to impose pre-conditions on a route, then pass control to subsequent routes if there’s no reason to proceed with the current route.
+</p>
+<p dir="auto">
+Route handlers can be in the form of a function, an array of functions, or combinations of both, as shown in the following examples.
+A single callback function can handle a route. For example:
+</p>
+<p dir="auto">  
 
+```
+  //add a middleware by callbacks
+  app.get('/example/b', (req, res, next) => {
+    console.log('the response will be sent by the next function ...')
+  next()
+  }, (req, res) => {
+    res.send('Hello from B!')
+  })
+```
+<br>
+<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r6.png?raw=true" width ="100%"/>
+</p>
 </p>
 </details>
 
