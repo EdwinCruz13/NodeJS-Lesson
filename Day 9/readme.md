@@ -136,8 +136,11 @@ app.get('/users/:userId', (req, res) => {
   <br>
   <br>
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r2.png?raw=true" width ="100%"/>
+
+
   <br>
    **Now, you can exceed and make a complex route like this**
+   
   <br>
 
   ```
