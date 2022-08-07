@@ -4,22 +4,54 @@
   <summary><h2>✨ Express - Routing</h2></summary>
     <p dir="auto">
         Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing. Each route can have one or more handler functions, which are executed when the route is matched. Route definition takes the following structure:
- <br>
-      
- ```
- app.METHOD(PATH, HANDLER)
- ```
- <br>
-      
- - **App** is an instance of express.
- - **METHOD** is an HTTP request method, in lowercase.
- - **PATH** is a path on the server.
- - **HANDLER** is the function executed when the route is matched.
- </p>
+  <br>
+        
+  ```
+  app.METHOD(PATH, HANDLER)
+  ```
+  <br>
+        
+  - **App** is an instance of express.
+  - **METHOD** is an HTTP request method, in lowercase.
+  - **PATH** is a path on the server.
+  - **HANDLER** is the function executed when the route is matched.
+  </p>
 </details>
 
 <details open="">
   <summary><h2>💬 Request methods</h2></summary>
+  <p dir="auto">
+        HTTP Methods or HTTP VERBS defines methods to indicate the desired action to be performed on the identified resource. What this resource represents, whether pre-existing data or data that is generated dynamically, depends on the implementation of the server. Often, the resource corresponds to a file or the output of an executable residing on the server. 
+  </p>
+
+  <p>
+    <figure class="table">
+      <table>
+        <tbody>
+          <tr>
+            <td><p style="text-align:center">HTTP Verb</p></td>
+            <td><p style="text-align:center">CRUD</p></td>
+            <td><p style="text-align:center">Description</p></td>
+            <td><p style="text-align:center">Example</p></td>
+            <td><p style="text-align:center">Entire Collection</p></td>
+            <td><p style="text-align:center">Specific Item</p></td>
+          </tr>
+          <tr>
+            <td>POST.</td>
+            <td>Create.</td>
+            <td>The POST verb is most-often utilized to **create** new resources. In particular, it's used to create subordinate resources. 
+                That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc.</td>
+            <td>POST http://www.example.com/customers</td>
+            <td>201 (Created), 'Location' header with link to /customers/{id} containing new ID.</td>
+            <td>404 (Not Found), 409 (Conflict) if resource already exists.</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  </p>
+
+
+
   <p dir="auto">
 
 - [x] Create a new file named "index.js", that will be used after the installation of express framework, be patient.  
