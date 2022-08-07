@@ -78,62 +78,6 @@
       </table>
     </figure>
   </p>
-
-
-
-  <p dir="auto">
-
-- [x] Create a new file named "index.js", that will be used after the installation of express framework, be patient.  
-- [x] Using the console make a package.json file npm. See this page that explains how you can do it <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%202">🔗 Over Here.</a>
-</br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file1.png?raw=true" width ="100%"/>
-
-- [x] You will see your package.json like this:
-</br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file2.png?raw=true" width ="100%"/>
-
-- [x] It is time to install "express", using the console write the next command
-```
-//install express locally (add -g if you want to install express globally)
-npm install express
-```
-- [x] After the setup, inmediatly you will see new folder in your work path.
-</br></br>
-<img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%208/resources/file3.png?raw=true" width ="100%"/>
-
-- [x] Check the package.json, you will see the express module installed as dependencies.
-```
-{
-  "name": "expresspackage_example",
-  "version": "1.0.0",
-  "description": "example using express",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EdwinCruz13/NodeJS-Lesson.git"
-  },
-  "keywords": [
-    "express",
-    "framework",
-    "nodejs",
-    "mern"
-  ],
-  "author": "EdwinCruz",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EdwinCruz13/NodeJS-Lesson/issues"
-  },
-  "homepage": "https://github.com/EdwinCruz13/NodeJS-Lesson#readme",
-  "dependencies": {
-    "express": "^4.18.1"
-  }
-}
-```
-- [x] node_module folder is where the new packages will be executed.
-</p>
 </details>
 
 
