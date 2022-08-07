@@ -190,7 +190,7 @@ Express is a routing and middleware web framework that has minimal functionality
 
    - [x] **Now, we are going to add a new middleware that will be executed when the users path is reached through http://localhost:3000/users/1**
  
-  ```
+```
 //define a middleware for a users route
 app.use('/users/:userId', (req, res, next) => {
     console.log('Request Type:', req.method)
@@ -204,8 +204,15 @@ app.get('/users/:userId', (req, res) => {
 });
 ```
 
-<br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r5.png?raw=true" width ="100%"/>
+</p>
+</details>
+
+
+<details open="">
+<summary><h2>🪛 Route handlers</h2></summary>
+<p dir="auto">
+
 </p>
 </details>
 
