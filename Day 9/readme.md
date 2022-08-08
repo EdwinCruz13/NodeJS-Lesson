@@ -231,7 +231,7 @@ A single callback function can handle a route. For example:
 ```
 <br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r6.png?raw=true" width ="100%"/>
-<br>
+<br><br>
 <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%209/resources/r7.png?raw=true" width ="100%"/>
 </p>
 </p>
