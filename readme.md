@@ -35,7 +35,7 @@ Node.js was built on top of Google's V8 JavaScript engine since it was open-sour
     <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%207">Day 7 - HTTP Server - Content Type</a></li>
     <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%208">Day 8 - Express - Introduction</a></li>
     <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%209">Day 9 - Express - Routing</a></li>
-    <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%2010">Day 9 - Express - Responses</a></li>
+    <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson/tree/main/Day%2010">Day 10 - Express - Responses</a></li>
     <li><a href="#">Day 9 - </a></li>
     <li><a href="#">Day 10 - </a></li>
   </ul>
