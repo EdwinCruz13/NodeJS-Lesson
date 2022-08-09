@@ -378,7 +378,7 @@ app.listen(3000, () => {
 node redirect.js
 ```
 
-- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/ . Then, you will see the "/" routes redirect to "/aboutus" route automatically ↓
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/download . Then, you will see an attachment that will be downloaded soon ↓
 
   <br>
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp2.png?raw=true" width ="100%"/>
