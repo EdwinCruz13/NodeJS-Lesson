@@ -252,6 +252,14 @@ app.use("/", (req, res) => {
 });
 ```
 
+- [x] Now, use the listen method to start the server
+```
+//start the server
+app.listen(3000, () => {
+    console.log(`Server on port 3000`)
+});
+```
+
 - [x] execute the app
 ```
 node json.js
@@ -264,5 +272,57 @@ node json.js
   </p>
 </details>
 
+
+
+
+<details open="">
+  <summary><h2>💬 Redirect Response</h2></summary>
+  <p dir="auto">
+       Redirects to the URL derived from the specified path, with specified status, a positive integer that corresponds to an HTTP status code . If not specified, status defaults to “302 “Found”.
+  </p>
+
+  <p dir="auto">
+
+- [x] Create a new file named redirect.js, then, require express module
+```
+//require express module
+const express = require('express');
+
+//instance express
+const app = express();
+```
+
+
+
+- [x] Add different a route adding the method "use", the route could be "/" and "/aboutus"
+```
+app.get("/", (req, res) => {
+    res.redirect('/aboutus')
+});
+
+app.get("/aboutus", (req, res) => {
+    res.json({ user: 'edwin', pass:'****', email: 'edwin@gmail.com' })
+});
+```
+
+- [x] Now, use the listen method to start the server
+```
+//start the server
+app.listen(3000, () => {
+    console.log(`Server on port 3000`)
+});
+```
+
+- [x] execute the app
+```
+node redirect.js
+```
+
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/
+
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp4.png?raw=true" width ="100%"/>
+  </p>
+</details>
 
 

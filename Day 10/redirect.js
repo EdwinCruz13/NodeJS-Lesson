@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
     res.redirect('/aboutus')
 });
 
-app.use("/aboutus", (req, res) => {
+app.get("/aboutus", (req, res) => {
     res.json({ user: 'edwin', pass:'****', email: 'edwin@gmail.com' })
 });
 
