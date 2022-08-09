@@ -84,7 +84,7 @@ app.use("/", (req, res, next) => {
 });
 ```
 
-- [x] Add different routes and execute the app
+- [x] Add different routes adding the method "use"
 ```
 //create new route named plain
 app.use("/plain", (req, res) => {
@@ -136,6 +136,12 @@ app.listen(3000, () => {
 ```
 node end.js
 ```
+
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/json
+
+  <br>
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp.png?raw=true" width ="100%"/>
   </p>
 </details>
 
