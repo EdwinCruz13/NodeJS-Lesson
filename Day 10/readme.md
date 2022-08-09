@@ -224,3 +224,45 @@ node send.js
 
 
 
+
+<details open="">
+  <summary><h2>💬 JSON Response</h2></summary>
+  <p dir="auto">
+        Sends a JSON response. This method sends a response (with the correct content-type) that is the parameter converted to a JSON string using JSON.stringify().
+        The parameter can be any JSON type, including **object**, **array**, **string**, **Boolean**, **number**, or **null**, and you can also use it to convert other values to JSON.
+  </p>
+
+  <p dir="auto">
+
+- [x] Create a new file named json.js, then, require express module
+```
+//require express module
+const express = require('express');
+
+//instance express
+const app = express();
+```
+
+
+
+- [x] Add different a route adding the method "use", the route could be "/"
+```
+app.use("/", (req, res) => {
+    res.json({ user: 'edwin' })
+});
+```
+
+- [x] execute the app
+```
+node json.js
+```
+
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/
+
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp3.png?raw=true" width ="100%"/>
+  </p>
+</details>
+
+
+
