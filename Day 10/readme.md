@@ -57,78 +57,84 @@
 </details>
 
 <details open="">
-  <summary><h2>💬 Request methods</h2></summary>
+  <summary><h2>💬 End Response Methods</h2></summary>
   <p dir="auto">
-        HTTP Methods or HTTP VERBS defines methods to indicate the desired action to be performed on the identified resource. What this resource represents, whether pre-existing data or data that is generated dynamically, depends on the implementation of the server. Often, the resource corresponds to a file or the output of an executable residing on the server. 
+        Ends the response process. This method actually comes from Node core, specifically the response.end() method of http.ServerResponse.
+        Use to quickly end the response without any data. If you need to respond with data, instead use methods such as res.send() and res.json().
   </p>
 
-  <p>
-    **Below is a table summarizing recommended return values of the primary HTTP methods in combination with the resource URIs:**
-    <figure class="table">
-      <table>
-        <tbody>
-          <tr>
-            <td><p style="text-align:center">HTTP Verb</p></td>
-            <td><p style="text-align:center">CRUD</p></td>
-            <td><p style="text-align:center">Description</p></td>
-            <td><p style="text-align:center">Example</p></td>
-            <td><p style="text-align:center">Exit</p></td>
-          </tr>
-          <tr>
-            <td>POST</td>
-            <td>Create</td>
-            <td>The POST verb is most-often utilized to **create** new resources. In particular, it's used to create subordinate resources. 
-                In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc</td>
-            <td>POST http://www.example.com/customers</td>
-            <td>404 (Not Found), 409 (Conflict) if resource already exists</td>
-          </tr>
-          <tr>
-            <td>GET</td>
-            <td>Read</td>
-            <td>The HTTP GET method is used to **read** or retrieve a representation of a resource.
-                GET returns a representation in XML or JSON and an HTTP response code of 200 (OK)</td>
-            <td>GET http://www.example.com/customers/12345</td>
-            <td>200 (OK), single customer. 404 (Not Found), if ID not found or invalid</td>
-          </tr>
-          <tr>
-            <td>PUT</td>
-            <td>Update/Replace</td>
-            <td>PUT is most-often utilized for **update** capabilities, PUT-ing to a known resource URI with 
-                the request body containing the newly-updated representation of the original resource.</td>
-            <td>PUT http://www.example.com/customers/12345</td>
-            <td>200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid</td>
-          </tr>
-          <tr>
-            <td>PATCH</td>
-            <td>Update/Modify</td>
-            <td>PATCH is used for **modify** capabilities. The PATCH request only needs to contain the changes to the resource, not the complete resource</td>
-            <td>PATCH http://www.example.com/customers/12345</td>
-            <td>200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid</td>
-          </tr>
-           <tr>
-            <td>DELETE</td>
-            <td>Delete</td>
-            <td>DELETE is pretty easy to understand. It is used to **delete** a resource identified by a URI.</td>
-            <td>DELETE http://www.example.com/customers/12345</td>
-            <td>200 (OK). 404 (Not Found), if ID not found or invalid</td>
-          </tr>
-        </tbody>
-      </table>
-    </figure>
-  </p>
   <p dir="auto">
 
-- [x] A route method is derived from one of the HTTP methods, and is attached to an instance of the express class. The following code is an example of routes that are defined for the GET and the POST methods to the root of the app.
+- [x] Create a new file named end.js, then, require express module
 ```
-// GET method route
-app.get('/', (req, res) => {
-  res.send('GET request to the homepage')
-})
+//require express module
+const express = require('express');
 
-// POST method route
-app.post('/', (req, res) => {
-  res.send('POST request to the homepage')
-})
+//instance express
+const app = express();
+```
+
+- [x] Define a basic middleware.
+```
+//use a middleware before the download, because we want to know
+//the guy who is downloading our file through the "download" route
+app.use("/", (req, res, next) => {
+    console.log("Someone is accessing in ", req.url);
+    next();
+});
+```
+
+- [x] Add different routes and execute the app
+```
+//create new route named plain
+app.use("/plain", (req, res) => {
+    res.format({
+        'text/plain': function () {
+            res.send('hey')
+        }
+    })
+});
+
+//create new route named html
+app.use("/html", (req, res) => {
+    res.format({
+        'text/html': function () {
+          res.send('<h1>hey</h1>')
+        }
+    })
+});
+
+//create new route named json
+app.use("/json", (req, res) => {
+    res.format({
+        'application/json': function () {
+          res.send({ message: 'hey' })
+        }
+    })
+});
+
+//create new route named default that return a http code 406
+app.use("/default", (req, res) => {
+    res.format({
+        default: function () {
+          // log the request and respond with 406
+          res.status(406).send('Not Acceptable')
+        }
+    })
+});
+```
+
+- [x] Now, use the listen method to start the server
+```
+//start the server
+app.listen(3000, () => {
+    console.log(`Server on port 3000`)
+});
+```
+
+- [x] execute the app
+```
+node end.js
 ```
   </p>
 </details>
