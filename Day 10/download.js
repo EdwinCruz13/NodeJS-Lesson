@@ -12,7 +12,7 @@ app.use("/download", (req, res, next) => {
 });
 
 //create a new route named "download" that send a response a file
-app.use("/download", (req, res) => {
+app.get("/download", (req, res) => {
     const file = `${__dirname}/resources/git_sheets.pdf`;
     res.download(file)
 });

@@ -326,3 +326,63 @@ node redirect.js
 </details>
 
 
+<details open="">
+  <summary><h2>💬 Download Response</h2></summary>
+  <p dir="auto">
+       Transfers the file at path as an “attachment”. Typically, browsers will prompt the user for download. By default, the Content-Disposition header “filename=” parameter is derrived from the path argument, but can be overridden with the filename parameter. If path is relative, then it will be based on the current working directory of the process or the root option, if provided of course.
+  </p>
+
+  <p dir="auto">
+
+- [x] Create a new file named download.js, then, require express module
+```
+//require express module
+const express = require('express');
+
+//instance express
+const app = express();
+```
+
+- [x] add a middleware than execute first any request from /download route
+```
+//use a middleware before the download, because we want to know
+//the guy who is downloading our file through the "download" route
+app.use("/download", (req, res, next) => {
+    console.log("Someone is accessing to our file to download...");
+    next();
+});
+```
+
+
+
+- [x] Add different a route adding the method "get", the route will be "/download"
+```
+//create a new route named "download" that send a response a file
+app.get("/download", (req, res) => {
+    const file = `${__dirname}/resources/git_sheets.pdf`;
+    res.download(file)
+});
+
+```
+
+- [x] Now, use the listen method to start the server
+```
+//start the server
+app.listen(3000, () => {
+    console.log(`Server on port 3000`)
+});
+```
+
+- [x] execute the app
+```
+node redirect.js
+```
+
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/ . Then, you will see the "/" routes redirect to "/aboutus" route automatically ↓
+
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp2.png?raw=true" width ="100%"/>
+  </p>
+</details>
+
+
