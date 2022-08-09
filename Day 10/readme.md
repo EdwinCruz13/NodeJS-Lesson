@@ -318,7 +318,7 @@ app.listen(3000, () => {
 node redirect.js
 ```
 
-- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/ . Then, you will see the "/" routes redirect to "/aboutus" route automatically ↓
 
   <br>
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp4.png?raw=true" width ="100%"/>
