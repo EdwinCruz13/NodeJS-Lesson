@@ -386,3 +386,76 @@ node redirect.js
 </details>
 
 
+
+
+
+
+
+<details open="">
+  <summary><h2>💬 Render Response</h2></summary>
+  <p dir="auto">
+       Renders a view and sends the rendered HTML string to the client. Optional parameters:
+
+      - locals, an object whose properties define local variables for the view.
+      - callback, a callback function. If provided, the method returns both the possible error and rendered string, but does not perform an automated response. When an error occurs, the method invokes next(err) internally.
+      
+  </p>
+  </br>
+      The view argument is a string that is the file path of the view file to render. This can be an absolute path, or a path relative to the views setting. If the path does not contain a file extension, then the view engine setting determines the file extension. If the path does contain a file extension, then Express will load the module for the specified template engine (via require()) and render it using the loaded module’s __express function.
+
+  <p dir="auto">
+
+  - [x] Create a new folder named "views".
+  - [x] Install a new package named "ejs", this package will be our "Template Engine"  in order to render our html, more information <a href="https://ejs.co/"> here!!!</a>
+
+```
+ npm install ejs
+```
+
+- [x] Create a new file named render.js, then, require express module
+```
+//require express module
+const express = require('express');
+
+//instance express
+const app = express();
+```
+
+- [x] It's time to use our ejs template engine ↓
+```
+// View engine setup
+app.set('view engine', 'ejs');
+```
+
+
+- [x] Add a route adding the method "get", the route will be "/"
+```
+app.get("/", (req, res) => {
+    res.render("index");
+});
+
+```
+- [x] This template engine will look up the folder "views" and find a index.html in order to render. This example use a template created before <a href="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/views/index.ejs"> Here!! </a>, you can use your own template though.
+
+- [x] Now, use the listen method to start the server
+```
+//start the server
+app.listen(3000, () => {
+    console.log(`Server on port 3000`)
+});
+```
+
+- [x] execute the app
+```
+node render.js
+```
+
+- [x] Visualize the app through the browser and go to one of our routes www.localhost:3000/ . Then, you will our template ↓
+
+  <br>
+  <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2010/resources/resp5.png?raw=true" width ="100%"/>
+  </p>
+</details>
+
+
+
