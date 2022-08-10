@@ -1,0 +1,33 @@
+{
+  "name": "apirest",
+  "version": "1.0.0",
+  "description": "A example how you can do an api rest",
+  "main": "index.s",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwinCruz13/NodeJS-Lesson.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "nodejs",
+    "express",
+    "mongo"
+  ],
+  "author": "EdwinCruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwinCruz13/NodeJS-Lesson/issues"
+  },
+  "homepage": "https://github.com/EdwinCruz13/NodeJS-Lesson#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
