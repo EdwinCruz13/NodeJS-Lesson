@@ -42,7 +42,7 @@ npm install express
 ```
 //require express
 const express = require('express')
-//this way you cab create a router
+//this way you can create a router
 const router = express.Router()
 
 // middleware that is specific to this router
@@ -66,7 +66,7 @@ module.exports = router
 ```
 //require express module
 const express = require('express');
-//reequire the router
+//require the router "MyPage"
 const HomePage = require('./MyPage');
 
 
@@ -74,7 +74,7 @@ const HomePage = require('./MyPage');
 const app = express();
 
 
-//use my router through the route "/"
+//use the router through the route "/"
 app.use("/", HomePage);
 
 
@@ -86,9 +86,10 @@ app.listen(3000, ()=>{
 ```
 node index.js
 ```
-  <br>
+- [x]  Finally, go to your browser and load http://localhost:3000/ and http://localhost:3000/about
+  <br> <br>
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2011/resources/day11_0.png?raw=true" width ="100%"/>
-  <br>
+  <br> <br>
   <img src="https://github.com/EdwinCruz13/NodeJS-Lesson/blob/main/Day%2011/resources/day11_1.png?raw=true" width ="100%"/>
 </p>
 </details>

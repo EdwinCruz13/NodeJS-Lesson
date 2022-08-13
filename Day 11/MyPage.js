@@ -1,6 +1,6 @@
 //require express
 const express = require('express')
-//this way you cab create a router
+//this way you can create a router
 const router = express.Router()
 
 // middleware that is specific to this router
@@ -17,5 +17,5 @@ router.get('/about', (req, res) => {
   res.send('This is the about page')
 })
 
-//exporte the modue
+//export the module
 module.exports = router
