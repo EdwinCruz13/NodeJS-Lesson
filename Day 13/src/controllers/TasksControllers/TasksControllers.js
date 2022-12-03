@@ -19,7 +19,8 @@ const GetTask = (req, res) =>{
         res.send({message:"Item Not found"});
 
     //return the item that was found
-    res.send(found)
+    else
+        res.send(found)
 }
 
 //exports the functions
